@@ -2,8 +2,8 @@
 local WhitelistModule = {}
 
 WhitelistModule.Teams = {
-    ["Ownership"] = {33333333},
-    ["Corporate"] = {44444444, 3569563947},
+    ["Ownership"] = {3569563947},
+    ["Corporate"] = {44444444},
     ["High Ranks"] = {66666666},
     ["Team Member"] = {77777777, 88888888}
 }
