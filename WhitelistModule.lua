@@ -2,10 +2,10 @@
 local WhitelistModule = {}
 
 WhitelistModule.Teams = {
-    ["Ownership"] = {11131},
+    ["Ownership"] = {3569563947},
     ["Corporate"] = {44444444},
     ["High Ranks"] = {66666666},
-    ["Team Member"] = {3569563947, 88888888}
+    ["Team Member"] = {88888888}
 }
 
 function WhitelistModule:GetTeam(player)
