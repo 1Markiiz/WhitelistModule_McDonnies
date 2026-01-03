@@ -1,22 +1,52 @@
 -- WhitelistModule
 local WhitelistModule = {}
 
-WhitelistModule.Teams = {
-    ["Ownership"] = {3569563947},
-    ["Corporate"] = {44444444},
-    ["High Ranks"] = {66666666},
-    ["Team Member"] = {88888888}
+-- Rank structure:
+-- RankName = {
+--     Team = "TeamName",
+--     Users = {UserIds}
+-- }
+
+WhitelistModule.Ranks = {
+    ["Chairman"] = {
+        Team = "Ownership",
+        Users = {
+            3569563947,
+        }
+    },
+
+    ["Vice-Chairman"] = {
+        Team = "Ownership",
+        Users = {
+            44444444,
+        }
+    },
+
+    ["Corporate"] = {
+        Team = "Corporate",
+        Users = {
+            66666666,
+        }
+    },
+
+    ["Team Member"] = {
+        Team = "Team Member",
+        Users = {
+            88888888,
+        }
+    }
 }
 
-function WhitelistModule:GetTeam(player)
-    for teamName, userIds in pairs(self.Teams) do
-        for _, id in ipairs(userIds) do
-            if player.UserId == id then
-                return teamName
+-- Returns rank name + team name
+function WhitelistModule:GetRank(player)
+    for rankName, data in pairs(self.Ranks) do
+        for _, userId in ipairs(data.Users) do
+            if player.UserId == userId then
+                return rankName, data.Team
             end
         end
     end
-    return nil
+    return nil, nil
 end
 
 return WhitelistModule
