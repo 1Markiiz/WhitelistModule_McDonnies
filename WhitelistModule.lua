@@ -34,6 +34,7 @@ WhitelistModule.Ranks = {
 		Team = "Corporate",
 		Users = {
             2780772562,
+            136014970,
         }
 	},
 
