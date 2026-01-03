@@ -18,7 +18,7 @@ WhitelistModule.Ranks = {
 		Priority = 90,
 		Team = "Ownership",
 		Users = {
-			1241683400,
+				
 		}
 	},
 
