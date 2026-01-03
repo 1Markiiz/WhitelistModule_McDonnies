@@ -106,11 +106,11 @@ WhitelistModule.Ranks = {
         Team = "Costumer",
         Users = {}
     },
-            ["Noted Costumer"] = {
+            ["Noted Customer"] = {
         Team = "Costumer",
         Users = {}
     },
-                ["Costumer"] = {
+                ["Customer"] = {
         Team = "Costumer",
         Users = {}
     },
