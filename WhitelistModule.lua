@@ -65,7 +65,9 @@ WhitelistModule.Ranks = {
     -- Management
     ["Branch Manager"] = {
         Team = "Management",
-        Users = {}
+        Users = {
+            1,
+        }
     },
 
     ["Branch Supervisor"] = {
