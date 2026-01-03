@@ -109,6 +109,10 @@ WhitelistModule.Ranks = {
         Team = "Costumer",
         Users = {}
     },
+                ["Costumer"] = {
+        Team = "Costumer",
+        Users = {}
+    },
 }
 
 -- Returns rank name + team name
