@@ -11,7 +11,7 @@ WhitelistModule.Ranks = {
     ["Chairman"] = {
         Team = "Ownership",
         Users = {
-            3569563947,
+            0,
         }
     },
 
