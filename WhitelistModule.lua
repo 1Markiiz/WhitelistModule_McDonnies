@@ -97,7 +97,8 @@ WhitelistModule.Ranks = {
     ["Junior Team Member"] = {
         Team = "Team Member",
         Users = {
-            0033
+            0033,
+            0023113,
         }
     },
 
