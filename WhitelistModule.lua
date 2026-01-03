@@ -32,7 +32,9 @@ WhitelistModule.Ranks = {
 	["Department Director"] = {
 		Priority = 70,
 		Team = "Corporate",
-		Users = {}
+		Users = {
+            2780772562,
+        }
 	},
 
 	["Assistant Director"] = {
