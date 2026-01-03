@@ -4,10 +4,12 @@ local WhitelistModule = {}
 -- Rank structure:
 -- RankName = {
 --     Team = "TeamName",
---     Users = {UserIds}
+--     Users = { UserIds }
 -- }
 
 WhitelistModule.Ranks = {
+
+    -- Ownership
     ["Chairman"] = {
         Team = "Ownership",
         Users = {
@@ -15,26 +17,87 @@ WhitelistModule.Ranks = {
         }
     },
 
-    ["Vice-Chairman"] = {
+    ["Vice Chairman"] = {
         Team = "Ownership",
         Users = {
             44444444,
         }
     },
 
-    ["Corporate"] = {
+    -- Development / Automation
+    ["Developer"] = {
+        Team = "Ownership",
+        Users = {}
+    },
+
+
+    -- Corporate
+    ["Department Director"] = {
         Team = "Corporate",
-        Users = {
-            66666666,
-        }
+        Users = {}
+    },
+
+    ["Assistant Director"] = {
+        Team = "Corporate",
+        Users = {}
+    },
+
+    ["Senior Corporate"] = {
+        Team = "Corporate",
+        Users = {}
+    },
+
+    ["Junior Corporate"] = {
+        Team = "Corporate",
+        Users = {}
+    },
+
+    ["Corporate Intern"] = {
+        Team = "Corporate",
+        Users = {}
+    },
+
+    ["Public Relations"] = {
+        Team = "Corporate",
+        Users = {}
+    },
+
+    -- Management
+    ["Branch Manager"] = {
+        Team = "Management",
+        Users = {}
+    },
+
+    ["Branch Supervisor"] = {
+        Team = "Management",
+        Users = {}
+    },
+
+    ["Assistant Supervisor"] = {
+        Team = "Management",
+        Users = {}
+    },
+
+    -- Kitchen / Staff
+    ["Kitchen Leader"] = {
+        Team = "Team Member",
+        Users = {}
+    },
+
+        ["Senior Team Member"] = {
+        Team = "Team Member",
+        Users = {}
     },
 
     ["Team Member"] = {
         Team = "Team Member",
-        Users = {
-            88888888,
-        }
-    }
+        Users = {}
+    },
+
+    ["Junior Team Member"] = {
+        Team = "Team Member",
+        Users = {}
+    },
 }
 
 -- Returns rank name + team name
